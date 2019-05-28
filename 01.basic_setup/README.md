@@ -1,3 +1,6 @@
+## docker-compose.yml
+[docker-compose.yml] (docker-compose.yml)
+
 ## Basic configuration to start with
 Simply run the contianer using docker-compose
 ```
