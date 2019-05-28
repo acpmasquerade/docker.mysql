@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: mysql:8.0
+    container_name: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      - "MYSQL_ROOT_PASSWORD=system"
+      - "MYSQL_ROOT_HOST=%"
+      - "MYSQL_DATABASE=myorg"
+      - "MYSQL_USER=me"
+      - "MYSQL_PASSWORD=system"
